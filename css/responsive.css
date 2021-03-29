@@ -1,0 +1,19 @@
+/* untuk tablet */
+@media all and (max-width:1000px) {
+    .team {
+        width: 40%;
+        margin-bottom: 50px;
+    }
+}
+
+
+
+/* untuk smartphone */
+@media all and (max-width: 670px) {
+    .team {
+        width: 100%;
+        margin-bottom: 30px;
+        border: 1px solid#B4B4B4;
+        border-radius: 20px;
+    }
+}
