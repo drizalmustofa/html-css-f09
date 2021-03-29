@@ -12,6 +12,9 @@ body {
 a {
     text-decoration: none;
 }
+li {
+  list-style: none;
+}
 
 
 .container {
@@ -45,7 +48,7 @@ header {
 
 .header-left {
     float: left;
-} 
+}
 
 .header-right {
     float: right;
@@ -107,4 +110,43 @@ header {
     width: 50%;
 }
 
+/* footer css */
 
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: rgba(210, 105, 30, 0.9);
+  bottom: 0;
+  z-index: 10;
+  position: fixed;
+  font-family: sans-serif;
+  color: white;
+ }
+
+ .footer-main {
+   padding: 35px 20px;
+ }
+
+ .container{
+   float: left;
+ }
+
+.container h1 {
+margin-bottom: 20px;
+}
+
+.container h4 {
+  margin-top: 20px;
+}
+
+.footer-right {
+  float: right;
+  text-align: right;
+}
+.footer-right li {
+  margin-bottom: 5px;
+}
+
+.fa {
+  margin-right: 10px;
+}
