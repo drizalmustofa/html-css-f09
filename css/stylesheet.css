@@ -19,6 +19,10 @@ body {
     font-family: sans-serif;
 }
 
+li {
+    list-style: none;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -27,11 +31,14 @@ a {
     text-decoration: none;
 }
 
+.clear {
+    clear: left;
+}
 
 .container {
     max-width: 1200px;
     width: 100%;
-    padding: 0 15px;
+    padding: 0 60px;
     margin: 0 auto;
 }
 
@@ -42,14 +49,14 @@ header {
     position: fixed;
     top: 0;
     z-index: 10;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .header-left h2 {
-    width: 300px;
+    width: 100%;
     margin-top: 18px;
     margin-bottom: 10px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     color: white;
     padding: 0 5px;
 }
@@ -64,7 +71,15 @@ header {
 
 .header-right {
     float: right;
-    margin-right: 25px;
+    margin-right: -25px;
+}
+
+.menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    display: none !important;
 }
 
 .header-right a {
@@ -81,13 +96,15 @@ header {
 }
 
 
+
 .top-banner {
     padding: 300px 0 100px 0;
     background-image: url(https://cdn.pixabay.com/photo/2016/11/21/15/58/wedding-1846114_960_720.jpg);
     background-size: cover;
+    height: 700px;
     color: azure;
     text-align: center;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .top-banner h1 {
@@ -95,11 +112,14 @@ header {
     font-size: 45px;
     letter-spacing: 3px;
     margin-bottom: 10px;
+    text-shadow: 2px 2px 5px #000000;
 }
 
 .top-banner p {
     /* opacity: 0.7; */
     margin-bottom: 10px;
+    text-shadow: 2px 2px 5px #000000;
+    font-size: 18px;
 }
 
 .btn-banner {
@@ -114,12 +134,12 @@ header {
 .input {
     padding: 12px 24px;
     color: black;
-    font-size: 18px;
+    font-size: 14px;
     margin: 16px 0 0 0;
     display: inline-block;
     opacity: 0.8;
     text-align: left;
-    width: 50%;
+    width: 60%;
 }
 
 /*css our team*/
@@ -193,41 +213,65 @@ header {
 /* footer css */
 
 footer {
+    min-height: 250px;
     width: 100%;
-    height: 200px;
     background-color: rgba(210, 105, 30, 0.9);
-    bottom: 0;
-    z-index: 10;
-    position: fixed;
-    font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+}
+
+/* .container {
+    max-width: 1200px;
+    width: 100%;
     color: white;
-}
-
-.footer-main {
-    padding: 35px 20px;
-}
-
-.container {
-    float: left;
-}
-
-.container h1 {
-    margin-bottom: 20px;
-}
-
-.container h4 {
-    margin-top: 20px;
+} */
+.footer-grup {
+    padding: 40px 0px;
 }
 
 .footer-right {
     float: right;
     text-align: right;
+    color: white;
 }
 
-.footer-right li {
-    margin-bottom: 5px;
+.footer-left {
+    float: left;
+    color: white;
 }
 
-.fa {
-    margin-right: 10px;
+.footer-left h1 {
+    margin-bottom: 15px;
+}
+
+.footer-left h4 {
+    margin-top: 40px;
+}
+
+.dev {
+    font-weight: lighter;
+    color: #f0b491;
+}
+
+.footer-right p {
+    margin-top: 28px;
+}
+
+.medsos {
+    margin-top: 20px;
+    letter-spacing: 6px;
+}
+
+.medsos .medsos-icon {
+    color: azure;
+}
+
+.medsos .medsos-icon:hover {
+    color: #f0b491;
+}
+
+.menu a {
+    color: white;
+    line-height: 28px;
 }

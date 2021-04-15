@@ -10,10 +10,55 @@
 
 /* untuk smartphone */
 @media all and (max-width: 670px) {
+    /* header */
+    .header-right {
+        display: none;
+    }
+    
+    .menu-icon {
+        display: block !important;
+    }
+    /* banner */
+    .top-banner h1{
+        font-size: 32px;
+    }
+    .top-banner p{
+        font-size: 14px;
+    }
+    .input{
+        width: 100%;
+        font-size: 12px;
+    }
+    /* our team */
     .team {
         width: 100%;
         margin-bottom: 30px;
         border: 1px solid#B4B4B4;
         border-radius: 20px;
+    }
+
+    .footer-left {
+        width: 50%;
+    }
+
+    .footer-left h1 {
+        font-size: 14px;
+    }
+
+    .footer-left p {
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+    .footer-right {
+        width: 40%;
+    }
+
+    .footer-right p {
+        font-size: 12px;
+    }
+
+    .footer-right .menu {
+        font-size: 12px;
     }
 }
