@@ -4,31 +4,83 @@
         width: 40%;
         margin-bottom: 50px;
     }
+
+    /* service */
+    .service-wrapper {
+        align-content: center;
+    }
+
+    .services {
+        width: 30%;
+    }
+
+    .btn-services {
+        height: 170px;
+    }
 }
 
 
 
 /* untuk smartphone */
-@media all and (max-width: 670px) {
+@media all and (max-width: 800px) {
+
     /* header */
     .header-right {
         display: none;
     }
-    
+
     .menu-icon {
         display: block !important;
     }
+
+    .header-right.show {
+        display: block;
+        position: absolute;
+        top: 65px;
+        background: rgba(210, 105, 30, 0.9);
+        width: 100%;
+        left: 0;
+    }
+
+    .header-right a:hover {
+        color: #353535;
+        background: #fff;
+    }
+
+    .header-right ul li {
+        display: block;
+        text-align: center;
+    }
+
     /* banner */
-    .top-banner h1{
+    .top-banner h1 {
         font-size: 32px;
     }
-    .top-banner p{
+
+    .top-banner p {
         font-size: 14px;
     }
-    .input{
+
+    .input {
         width: 100%;
         font-size: 12px;
     }
+
+    /* Paket */
+    .paket {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* Service */
+    .services {
+        width: 100%;
+    }
+
+    .btn-services {
+        height: 250px;
+    }
+
     /* our team */
     .team {
         width: 100%;

@@ -40,6 +40,7 @@ a {
     width: 100%;
     padding: 0 60px;
     margin: 0 auto;
+    /* background-color: chartreuse; */
 }
 
 header {
@@ -67,11 +68,7 @@ header {
 
 .header-left {
     float: left;
-}
-
-.header-right {
-    float: right;
-    margin-right: -25px;
+    margin-left: -20px;
 }
 
 .menu-icon {
@@ -82,13 +79,33 @@ header {
     display: none !important;
 }
 
-.header-right a {
+.header-right {
+    display: inline-block;
+    float: right;
+    margin-right: -25px;
+}
+
+.header-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-right ul li {
+    display: inline-block;
+}
+
+.header-right ul li a {
     line-height: 65px;
     padding: 0 15px;
     color: white;
     display: block;
-    float: left;
+    /*float: left;*/
     transition: all 0.5s;
+}
+
+.header-right a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .login:hover {
@@ -108,7 +125,6 @@ header {
 }
 
 .top-banner h1 {
-    /* opacity: 0.7; */
     font-size: 45px;
     letter-spacing: 3px;
     margin-bottom: 10px;
@@ -116,7 +132,6 @@ header {
 }
 
 .top-banner p {
-    /* opacity: 0.7; */
     margin-bottom: 10px;
     text-shadow: 2px 2px 5px #000000;
     font-size: 18px;
@@ -142,13 +157,133 @@ header {
     width: 60%;
 }
 
+/* css paket */
+.paket-grup {
+    min-height: 600px;
+    padding-bottom: 60px;
+}
+
+.paket-wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.paket {
+    float: left;
+    width: 30%;
+    background: rgb(245, 244, 244);
+    /* margin-right: 25px; */
+    margin: 10px;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.paket img {
+    width: 100%;
+}
+
+.paket-foto {
+    position: relative;
+}
+
+.paket-foto p {
+    top: 20px;
+    position: absolute;
+    color: white;
+    padding-left: 15px;
+}
+
+.paket-foto h1 {
+    top: 80px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+.fa-bullseye {
+    color: #eec5ad;
+}
+
+.button {
+    background-color: #e7b395;
+    border: none;
+    width: 90%;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: -70px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/*css service*/
+.service-grup {
+    min-height: 620px;
+    background-color: rgb(245, 244, 244);
+    margin-top: -50px;
+    padding-bottom: 60px;
+
+}
+
+.service-wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: cyan; */
+
+}
+
+.services {
+    float: left;
+    width: 23%;
+    /* padding-top: 10px; */
+    /* padding-bottom: 20px; */
+    margin: 10px;
+    /* margin-right: 20px;
+    margin-bottom: 20px; */
+    position: relative;
+    /* background-color: burlywood; */
+}
+
+
+.services img {
+    width: 100%;
+}
+
+.services p {
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 3px #000000;
+}
+
+.btn-services {
+    background: #e7b395;
+    width: 100%;
+    height: 195px;
+    border-radius: 15px;
+}
+
 /*css our team*/
 .team-grup {
     padding-bottom: 80px;
     padding-left: 5%;
     padding-right: 5%;
     text-align: center;
-    /* background-color: #f7f7f7; */
 }
 
 .team-wrapper {
@@ -156,6 +291,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* background-color: aqua; */
 }
 
 .team-img {
@@ -169,17 +305,16 @@ header {
     padding-bottom: 20px;
     margin: 10px;
     text-align: center;
-    /* border: 1px solid#B4B4B4; */
-    /* border-radius: 20px; */
+    /* background-color: burlywood; */
 }
 
 .txt-content {
     width: 80%;
     display: inline-block;
     margin-top: 10px;
+    padding-bottom: 30px;
     font-size: 15px;
     color: #B4B4B4;
-    /* color: #b3aeb5; */
 }
 
 .txt-content h2 {
@@ -192,10 +327,27 @@ header {
     padding-bottom: 15px;
 }
 
+.txt-content ul {
+    padding-top: 10px;
+    padding-left: 6px;
+}
+
+.txt-content li {
+    padding-left: 5px;
+    padding-bottom: 15px;
+}
+
 .heading {
     margin-top: 50px;
     margin-bottom: 20px;
+    padding-top: 50px;
     color: #E39D75;
+    text-align: center;
+}
+
+.heading p {
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 .medsos-icon {
@@ -221,11 +373,6 @@ footer {
     position: absolute;
 }
 
-/* .container {
-    max-width: 1200px;
-    width: 100%;
-    color: white;
-} */
 .footer-grup {
     padding: 40px 0px;
 }
@@ -234,6 +381,10 @@ footer {
     float: right;
     text-align: right;
     color: white;
+}
+
+.footer-right a:hover {
+    color: #f0b491;
 }
 
 .footer-left {
